@@ -30,10 +30,9 @@ On the *Ingress* tab, enable the ingress and set it to `Accept traffic from anyw
 
 Now that the Container App is running, you still need to activate the llama 3.2 model. Open the Azure Shell: https://portal.azure.com/#cloudshell/
 
-You need to connect to the container to run commands inside the container itself. You can use that to modify the applications running in the container or to check logs. To connect to the container, you can use `az containerapp exec` command, rplace the name of the Container App or Resource Group with the ones you used, the command must be `/bin/sh` to run commands in the container:
+You need to connect to the container to run commands inside the container itself. You can use that to modify the applications running in the container or to check logs. To connect to the container, you can use `az containerapp exec` command, replace the name of the Container App or Resource Group with the ones you used, the command must be `/bin/sh` to run commands in the container:
 
-`az containerapp exec --name microhack-aiapp --resource-group MicroHack-AppServiceToContainerApp --command "/bin/sh"
-ollama run llama3.2`
+`az containerapp exec --name microhack-aiapp --resource-group MicroHack-AppServiceToContainerApp --command "/bin/sh"'
 
 You should see *INFO: Connection to the container 'microhack-aiapp'...*
 
